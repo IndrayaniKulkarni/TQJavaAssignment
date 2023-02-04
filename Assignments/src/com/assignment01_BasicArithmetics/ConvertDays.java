@@ -11,8 +11,8 @@
  */
  
  //util , lang are packages 
+package com.assignment01_BasicArithmetics;
 import java.util.Scanner;
-import java.lang.Math;
 class ConvertDays
 {
     public static void main(String args[])

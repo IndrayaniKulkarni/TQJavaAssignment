@@ -8,6 +8,7 @@
  *
  * Copyright notice
 */
+package com.assignment01_BasicArithmetics;
 import java.util.Scanner;
 class PerimeterOfRectangle
 {

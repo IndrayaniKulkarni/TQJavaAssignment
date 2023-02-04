@@ -1,5 +1,5 @@
 /*
- * 1. Write a Java program to enter two numbers and find their sum.
+  1. Write a Java program to enter two numbers and find their sum.
  *
  * Classname - AddTwoNums
  * 
@@ -7,8 +7,9 @@
  *
  * Date - 28 Jan., 2023
  * 
- * Copyright notice
+ * Copyright notice 
  */
+package com.assignment01_BasicArithmetics;
 import java.util.Scanner;
 
 class AddTwoNums

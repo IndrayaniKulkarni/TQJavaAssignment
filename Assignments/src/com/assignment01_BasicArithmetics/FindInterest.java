@@ -10,8 +10,8 @@
  *
  * Copyright notice
  */
+package com.assignment01_BasicArithmetics;
 import java.util.Scanner;
-import java.lang.Math;
 class FindInterest
 {
     public static void main(String args[])

@@ -9,8 +9,8 @@
  *
  * Copyright notice
  */
+package com.assignment01_BasicArithmetics;
 import java.util.Scanner;
-import java.lang.Math;
 class SquareRoot
 {
     public static void main(String args[])
