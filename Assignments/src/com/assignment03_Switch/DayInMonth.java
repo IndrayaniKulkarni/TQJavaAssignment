@@ -37,21 +37,25 @@ public class DayInMonth {
 			System.out.println("\nPlease enter the year = ");
 			int year = sc.nextInt();
 //			boolean flag = false;
-			int flag=0;
+			int flag = 0;
 			if (((year % 4 == 0) && (year % 100 != 0)) || (year % 400 == 0)) {
 				flag = 1;
 			} else {
 				flag = 0;
 			}
-			//switch value type can't be boolean
-			switch(flag)
-			{
-			case 1: System.out.println(" 29 days in the month.");break;
-			case 0:System.out.println(" 28 days in the month.");break;
+			// switch value type can't be boolean
+			switch (flag) {
+			case 1:
+				System.out.println(" 29 days in the month.");
+				break;
+			case 0:
+				System.out.println(" 28 days in the month.");
+				break;
 			}
 			break;
-			
-			default: System.out.println("\nKindly check something went wrong...");
+
+		default:
+			System.out.println("\nKindly check something went wrong...");
 
 		}
 		sc.close();

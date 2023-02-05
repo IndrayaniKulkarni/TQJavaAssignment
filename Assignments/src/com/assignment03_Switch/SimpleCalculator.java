@@ -74,8 +74,10 @@ public class SimpleCalculator {
 				num2 = sc.nextInt();
 				System.out.println(num1 + " % " + num2 + " = " + (num1 % num2));
 				break;
-				
-			case 6: System.out.println("\n______________________________________");break;
+
+			case 6:
+				System.out.println("\n______________________________________");
+				break;
 			default:
 				System.out.println("\n Invalid input...");
 				break;

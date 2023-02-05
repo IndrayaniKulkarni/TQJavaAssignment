@@ -11,17 +11,21 @@ import java.util.Scanner;
 public class EvenOddSwitch {
 
 	public static void main(String[] args) {
-		
+
 		Scanner sc = new Scanner(System.in);
 		System.out.println("\nNumber = ");
-		int num = sc.nextInt();	
-		int flag =((num%2==0)?1:0);
-		
-		switch(flag)
-		{
-		case 0: System.out.println(" " + num + " is odd number."); break;
-		case 1: System.out.println(" " + num + " is even number."); break;
-		default : System.out.println("\nSorry something went wrong..");
+		int num = sc.nextInt();
+		int flag = ((num % 2 == 0) ? 1 : 0);
+
+		switch (flag) {
+		case 0:
+			System.out.println(" " + num + " is odd number.");
+			break;
+		case 1:
+			System.out.println(" " + num + " is even number.");
+			break;
+		default:
+			System.out.println("\nSorry something went wrong..");
 		}
 		sc.close();
 	}
