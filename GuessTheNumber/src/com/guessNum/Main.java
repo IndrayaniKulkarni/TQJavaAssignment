@@ -21,7 +21,7 @@ public class Main {
 			System.err.println("\nGuess the (integer) number = ");
 			int guess = sc.nextInt();
 
-			System.out.println(target);
+			//System.out.println(target);
 			if (target == guess) {
 				System.out.println("\nBingo...You guessed right number .....");
 				flag = true;
