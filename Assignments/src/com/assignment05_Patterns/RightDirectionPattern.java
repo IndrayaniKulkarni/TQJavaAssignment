@@ -39,6 +39,7 @@ public class RightDirectionPattern {
 				System.out.print((j + 1));
 			}
 			System.out.println();
+			sc.close();
 		}
 
 	}
