@@ -27,22 +27,26 @@ public class ElectricityConsumption {
 		}
 		else if(units<150)
 		{
-			bill = units * 0.75;
+			bill = 50 * 0.50 + (units-50) * 0.75;
 			rate = 0.75f;
 		}
 		else if(units<250)
 		{
-			bill =units * 1.20;
+			bill = (50 * 0.05)+ (150 * 0.75) + (units-200) * 1.20;
 			rate = 1.20f;
 		}
 		else if(units>=250)
 		{
-			bill = units* 1.50;
+			bill = (50 * 0.05)+ (150 * 0.75) + (50 * 1.20) + (units-250)* 1.50;
 			rate = 1.50f;
 		}
 		bill = bill+(bill)*0.20f;
-		System.out.println("Electricity consumption(in units)------Rate-----Amount(RS)");
-		System.out.print("\t\t"+units+"\t\t\t"+rate+"\t"+(float)bill);
+		System.out.println("Units-----------Rate");
+		System.out.println("050            Rs.0.05");
+		System.out.println("150            Rs.0.75");
+		System.out.println("250            Rs.1.20");
+		System.out.println("Electricity consumption(in units)------Amount(RS)");
+		System.out.print("\t\t"+units+"\t\t\t"+(float)bill);
 		sc.close();
 
 	}
