@@ -27,8 +27,7 @@ public class DivideString {
 		
 	}
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		
 		Scanner sc = new Scanner(System.in);
 		System.out.println("String = ");
 		String word = sc.next();

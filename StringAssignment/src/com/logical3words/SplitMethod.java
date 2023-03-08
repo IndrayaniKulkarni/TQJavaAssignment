@@ -11,50 +11,47 @@ public class SplitMethod {
 
 	public static String[] splitS(String s, char ch) {
 		char letters[] = s.toCharArray();
-		int noOfWords = 0;
+//		System.out.println(Arrays.toString(letters));
+		int noOfWords = 1;
 		// no. of words
-		for(int i=0; i<s.length(); i++) {
-			if(ch==s.charAt(i)) {
+		for (int i = 0; i < s.length(); i++) {
+			if (ch == s.charAt(i)) {
 				noOfWords++;
 			}
 		}
+		System.out.println("no of words "+noOfWords);
 		// array of size no. of words
-		String words[] = new String[noOfWords+1];
-		
+		String words[] = new String[noOfWords];
+
 		// lets try with substring
-    /* 	int index =0;
-		int k=0;
-		for(int j=0; j<s.length(); j++) {
-			if(s.charAt(j)==ch) {
-				words[k++]=s.substring(index,j);
-				System.out.println(" > "+s.substring(index,j));
-			}
-			index++;	
-		} */
-//		System.out.println(Arrays.toString(words));
-		int k;
-		for(int i=0; i<letters.length; i++) {
-			if(letters[i]==ch) {
-				k=i;
-			}
-			String a = new String();
-		}
+		
+		int start = 0;
+	    int end = s.indexOf(ch);
+	    int i = 0;
+
+	    while (end >= 0) {
+	        words[i++] = s.substring(start, end);
+	        start = end + 1;
+	        end = s.indexOf(ch, start);
+	    }
+	    words[i] = s.substring(start);
+
 		return words;
 	}
-	public static void main(String args[])
-	{
+
+	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
-		
+
 		System.out.println("String =");
 		String str = sc.nextLine();
-		
+
 		System.out.println("spilt at which place =");
-		char ch = sc.next().charAt(0);
-		
-		String s[] = splitS(str,ch);
-		
-		System.out.println(" >"+Arrays.toString(s));
-		
+		char ch = sc.nextLine().charAt(0);
+//        System.out.println(" {"+ch+"}");
+		String s[] = splitS(str, ch);
+
+		System.out.println(" Words in sentences = " + Arrays.toString(s));
+
 		sc.close();
 	}
 }

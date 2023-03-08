@@ -1,5 +1,6 @@
 /** 
  * 14. Split the string w/o method
+ * (incomplete code)
  */
 package com.logical2;
 
