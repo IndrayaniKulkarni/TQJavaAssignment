@@ -15,7 +15,9 @@ public class ReverseArray2 {
 	public static void reverse(int num[]) {
 		int half = (num.length)/2;
 		for(int i=0; i<half-1; i++) {
+			int temp = num[i];
 			num[i] = num[num.length-1-i];
+			num[num.length-1-i] = temp;
 		}
 	}
 	public static void print(int a[]) {
