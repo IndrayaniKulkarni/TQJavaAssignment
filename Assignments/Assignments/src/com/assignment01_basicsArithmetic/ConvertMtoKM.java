@@ -9,7 +9,7 @@
  *
  * Copyright notice
 */
-package com.assignment01_BasicArithmetics;
+package com.assignment01_basicsArithmetic;
 import java.util.Scanner;
 class ConvertMtoKM
 {
